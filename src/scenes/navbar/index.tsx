@@ -23,21 +23,17 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 `}>
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
-                        <img alt="logo" src={Logo} />
+                        {isAboveMediumScreens && <img alt="logo" src={Logo} />}
 
                         {isAboveMediumScreens ? (
                             <div className={`${flexBetween} w-full`}>
-                                <div className={`${flexBetween} gap-8 text-sm`}>
+                                <div className={`${flexBetween} gap-8 text-lg font-semibold`}>
                                     <Link
                                         page="Home"
                                         selectedPage={selectedPage}
                                         setSelectedPage={setSelectedPage} />
                                     <Link
-                                        page="About"
-                                        selectedPage={selectedPage}
-                                        setSelectedPage={setSelectedPage} />
-                                    <Link
-                                        page="Benefits"
+                                        page="Experience"
                                         selectedPage={selectedPage}
                                         setSelectedPage={setSelectedPage} />
                                     <Link
@@ -50,8 +46,8 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                         setSelectedPage={setSelectedPage} />
                                 </div>
                                 <div className={`${flexBetween} gap-8 `}>
-                                    <p> Sign In</p>
-                                    <ActionButton setSelectedPage={setSelectedPage} >Become a Member</ActionButton>
+
+                                    <ActionButton setSelectedPage={setSelectedPage} >Hiring me</ActionButton>
                                 </div>
                             </div>
                         ) : (
