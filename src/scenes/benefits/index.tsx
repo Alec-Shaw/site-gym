@@ -70,12 +70,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 },
                     }}
-                >   <div className="before:absolute before:-bottom-60 before:right-20 before:z-[-1] before:content-arrow">
-                        <HText>CHARACTER ANIMATION</HText>
-                        <p className="my-5 text-lg">
-                            Character animation for games and cartoon.
-                        </p>
-                    </div>
+                >
+                    <HText>CHARACTER ANIMATION</HText>
+                    <p className="my-5 text-lg">
+                        Character animation for games and cartoon.
+                    </p>
+
                 </motion.div>
 
                 {/* BENEFITS */}
