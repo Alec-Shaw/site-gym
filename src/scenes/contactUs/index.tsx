@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
+import ContactUsPageGraphic from "@/assets/bird.gif";
 import HText from "@/shared/HText";
 
 
@@ -28,7 +28,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
     };
 
     return (
-        <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32" >
+        <section id="contactme" className="mx-auto w-5/6 pt-24 pb-32" >
             <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
                 <motion.div
                     className="md:w-3/5"
@@ -42,12 +42,10 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                     }}
                 >
                     <HText>
-                        <span>JOIN NOW TO GET IN SHAPE</span>
+                        <span>HIRING ME NOW</span>
                     </HText>
-                    <p className="my-5">
-                        Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
-                        sapien vel rhoncus. Placerat at in enim pellentesque. Nulla
-                        adipiscing leo egestas nisi elit risus sit. Nunc cursus sagittis.
+                    <p className="my-5 text-lg">
+                        By choosing me, you will get an honest and responsible employee.
                     </p>
                 </motion.div>
                 <div className="mt-10 justify-between gap-8 md:flex">
@@ -134,7 +132,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
                             visible: { opacity: 1, y: 0 },
                         }}
                     >
-                        <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+                        <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-circles">
                             <img
                                 className="w-full"
                                 alt="contact-us-page-graphic"

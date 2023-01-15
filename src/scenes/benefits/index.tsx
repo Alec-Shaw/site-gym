@@ -7,27 +7,42 @@ import {
     AcademicCapIcon,
 } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "@/assets/discount.gif";
 import Benefit from "./Benefit";
+import Giff from "@/assets/yelling.gif"
+import Spesial from "@/assets/spesial.gif"
+import Spes from "@/assets/gg.gif"
+
+const Gif = () => {
+    return <img src={Giff} />
+}
+
+const Cat = () => {
+    return <img src={Spesial} />
+}
+
+const Gg = () => {
+    return <img src={Spes} />
+}
 
 const benefits: Array<BenefitType> = [
     {
-        icon: <HomeModernIcon className="h-6 w-6" />,
-        title: "State of the Art Facilities",
+        icon: <Gif />,
+        title: "Among Us",
         description:
-            "Neque adipiscing amet amet enim. Feugiat dolor enim fermentum in a in lectus pellentesque. Ullamcorper et.",
+            "",
     },
     {
-        icon: <UserGroupIcon className="h-6 w-6" />,
-        title: "100's of Diverse Classes",
+        icon: <Cat />,
+        title: "My Cat",
         description:
-            "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
+            "",
     },
     {
-        icon: <AcademicCapIcon className="h-6 w-6" />,
-        title: "Expert and Pro Trainers",
+        icon: <Gg />,
+        title: "Save the Princess",
         description:
-            "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
+            " ",
     },
 ];
 
@@ -60,13 +75,12 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 },
                     }}
-                >
-                    <HText>MORE THAN JUST GYM.</HText>
-                    <p className="my-5 text-sm">
-                        We provide world class fitness equipment, trainers and classes to
-                        get you to your ultimate fitness goals with ease. We provide true
-                        care into each and every member.
-                    </p>
+                >   <div className="before:absolute before:-bottom-60 before:right-20 before:z-[-1] before:content-arrow">
+                        <HText>CHARACTER ANIMATION</HText>
+                        <p className="my-5 text-lg">
+                            Character animation for games and cartoon.
+                        </p>
+                    </div>
                 </motion.div>
 
                 {/* BENEFITS */}
@@ -81,7 +95,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
                         <Benefit
                             key={benefit.title}
                             icon={benefit.icon}
-                            title={benefit.title}
+                            title={<p className="text-lg">{benefit.title}</p>}
                             description={benefit.description}
                             setSelectedPage={setSelectedPage}
                         />
@@ -113,8 +127,8 @@ const Benefits = ({ setSelectedPage }: Props) => {
                                     }}
                                 >
                                     <HText>
-                                        MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                                        <span className="text-primary-500">FIT</span>
+                                        MOTION GRAPHICS
+
                                     </HText>
                                 </motion.div>
                             </div>
@@ -132,26 +146,22 @@ const Benefits = ({ setSelectedPage }: Props) => {
                             }}
                         >
                             <p className="my-5">
-                                Nascetur aenean massa auctor tincidunt. Iaculis potenti amet
-                                egestas ultrices consectetur adipiscing ultricies enim. Pulvinar
-                                fames vitae vitae quis. Quis amet vulputate tincidunt at in
-                                nulla nec. Consequat sed facilisis dui sit egestas ultrices
-                                tellus. Ullamcorper arcu id pretium sapien proin integer nisl.
-                                Felis orci diam odio.
+                                Motion graphics and shapes animation
                             </p>
                             <p className="mb-5">
-                                Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
-                                tellus quam porttitor. Mauris velit euismod elementum arcu neque
-                                facilisi. Amet semper tortor facilisis metus nibh. Rhoncus sit
-                                enim mattis odio in risus nunc.
+                                Motion graphics animation doesn't mean a full-blown animated film,
+                                like a Disney film with defined characters, plot and narrative arc.
+                                Instead, it generally refers to shorter pieces of animation that
+                                entertain or impart information. 3D motion graphics, for example,
+                                are prominently used in adverts.
                             </p>
                         </motion.div>
 
                         {/* BUTTON */}
                         <div className="relative mt-16">
-                            <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                            <div className="before:absolute before:-bottom-20 before:right-20 before:z-[1] before:content-sparkles">
                                 <ActionButton setSelectedPage={setSelectedPage}>
-                                    Join Now
+                                    Hiring me
                                 </ActionButton>
                             </div>
                         </div>

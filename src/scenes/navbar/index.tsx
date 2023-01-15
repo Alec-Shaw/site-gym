@@ -23,7 +23,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             <div className={`${navbarBackground} ${flexBetween} fixed top-0 z-30 w-full py-6 `}>
                 <div className={`${flexBetween} mx-auto w-5/6`}>
                     <div className={`${flexBetween} w-full gap-16`}>
-                        {isAboveMediumScreens && <img alt="logo" src={Logo} />}
+                        <img alt="logo" src={Logo} />
 
                         {isAboveMediumScreens ? (
                             <div className={`${flexBetween} w-full`}>
@@ -37,11 +37,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                         selectedPage={selectedPage}
                                         setSelectedPage={setSelectedPage} />
                                     <Link
-                                        page="Our Classes"
+                                        page="My works"
                                         selectedPage={selectedPage}
                                         setSelectedPage={setSelectedPage} />
                                     <Link
-                                        page="Contact Us"
+                                        page="Contact Me"
                                         selectedPage={selectedPage}
                                         setSelectedPage={setSelectedPage} />
                                 </div>
@@ -89,7 +89,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                             setSelectedPage={setSelectedPage}
                         />
                         <Link
-                            page="Contact Us"
+                            page="Contact Me"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                         />

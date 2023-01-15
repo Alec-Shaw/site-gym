@@ -8,7 +8,6 @@ import ContactUs from "./scenes/contactUs";
 import Footer from "./scenes/footer";
 
 
-
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
   const [isTopOfPage, setIsTopOfPage] = useState<boolean>(true);
@@ -37,6 +36,7 @@ function App() {
       <OurClasses setSelectedPage={setSelectedPage} />
       <ContactUs setSelectedPage={setSelectedPage} />
       <Footer />
+
     </div>
   )
 }

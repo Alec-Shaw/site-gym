@@ -11,13 +11,18 @@ const Class = ({ name, description, image }: Props) => {
     opacity-0 transition duration-500 hover:opacity-90`;
 
     return (
-        <li className="relative mx-5 inline-block h-[380px] w-[450px]">
-            <div className={overlayStyles}>
-                <p className="text-2xl">{name}</p>
-                <p className="mt-5">{description}</p>
-            </div>
-            <img alt={`${image}`} src={image} />
-        </li>
+        <>
+            <li className="relative mx-5 inline-block h-[380px] w-[450px]">
+                <div>
+                    {/* <p className="text-2xl">{name}</p>
+                <p className="mt-5">{description}</p> */}
+                </div>
+                {/* <img alt={`${image}`} src={image} /> */}
+                {/* <div className="hidden duration-700 ease-in-out" data-carousel-item="active"> */}
+                <iframe className="h-80 w-96" src={image} title="Motion Design Showreel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+            </li>
+        </>
     );
 };
 
