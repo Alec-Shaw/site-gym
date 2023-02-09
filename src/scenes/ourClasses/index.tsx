@@ -20,6 +20,12 @@ const classes: Array<ClassType> = [
         name: "Ab Core Classes",
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        image: "https://www.youtube.com/watch?v=RPQ0IUPjqB4",
+    },
+    {
+        name: "Ab Core Classes",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         image: "https://www.youtube.com/embed/4f37cQ7xMkM",
     },
     {
