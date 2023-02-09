@@ -19,7 +19,7 @@ const Class = ({ name, description, image }: Props) => {
                 </div>
                 {/* <img alt={`${image}`} src={image} /> */}
                 {/* <div className="hidden duration-700 ease-in-out" data-carousel-item="active"> */}
-                <iframe className="h-80 w-96" src={image} title="Motion Design Showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+                <iframe className="h-80 w-96" src={image} title="Motion Design Showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" ></iframe>
 
             </li>
         </>
