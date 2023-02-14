@@ -28,7 +28,7 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <Cat />,
-    title: "My Cat",
+    title: "Stump",
     description: "",
   },
   {
