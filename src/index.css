@@ -15,3 +15,11 @@ body,
   font-family: "DM Sans", sans-serif;
   @apply text-gray-500;
 }
+
+.overflow-x-auto::-webkit-scrollbar {
+  height: 8px;
+}
+.overflow-x-auto::-webkit-scrollbar-thumb {
+  background: #ffb400; /* Ваш цвет (например, secondary-500) */
+  border-radius: 10px;
+}

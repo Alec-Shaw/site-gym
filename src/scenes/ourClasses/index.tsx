@@ -2,7 +2,7 @@ import { SelectedPage, ClassType } from "@/shared/types";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class";
-import Scrollbars from "react-custom-scrollbars-2";
+
 
 
 const classes: Array<ClassType> = [
@@ -90,7 +90,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                 </motion.div>
 
                 <div className="mt-10 h-[353px] w-full overflow-x-auto overflow-y-hidden">
-                    <Scrollbars>
+                
                         <ul className="w-[2800px] whitespace-nowrap">
                             {classes.map((item: ClassType, index) => (
                                 <Class
@@ -101,7 +101,7 @@ const OurClasses = ({ setSelectedPage }: Props) => {
                                 />
                             ))}
                         </ul>
-                    </Scrollbars>
+                    
                 </div>
 
             </motion.div>
